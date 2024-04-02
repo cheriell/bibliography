@@ -100,6 +100,18 @@
 %   edition   	= {edition},
 %   doi       	= {doi},
 % }
+%
+% [at]phdthesis{AuthorYear_ShortTitle_Thesis,
+% 	author 		= {author},
+% 	title 		= {title},
+%	school 		= {University},
+%	year 		= {year},
+% }
+%
+% [at]misc{Title_Online,
+%   title = {title},
+%   howpublished = {\url{webpage}, last accessed on <date>},
+% }
 % 
 %
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,6 +125,7 @@
 % #MPE								Multi-pitch estimation
 % #NT								Note tracking
 % #PM2S								Performance MIDI-to-score (conversion)
+% #rhythm_quantisation				Rhythm quantisation
 % #singing_transcription			Singing Transcription
 % 
 % - Methods:
@@ -199,6 +212,15 @@
 %   %%          %%
 %   %%%%%%%%    %%%%%%%%
 
+@inproceedings{LiuKMB2022_PM2S_ISMIR,
+	author      = {Lele Liu and Qiuqiang Kong and Veronica Morfi and Emmanouil Benetos},
+	title       = {Performance {MIDI}-to-score conversion by neural beat tracking},
+	booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+	address     = {Bengaluru, India},
+	pages       = {395--402},
+	year        = {2022},
+}
+
 @article{AminiFPDM2022_SelfTrainingSurvey_CoRR,
 	author      = {Massih{-}Reza Amini and Vasilii Feofanov and Lo{\"{\i}}c Pauletto and Emilie Devijver and Yury Maximov},
 	title       = {Self-training: {A} Survey},
@@ -284,6 +306,13 @@
 %   %%                %%
 %   %%%%%%%%          %%
 
+@inproceedings{LiuMB2021_ACPASDataset_ISMIR-LBD,
+	author		= {Lele Liu and Veronica Morfi and Emmanouil Benetos},
+  	title		= {ACPAS: {A} dataset of aligned classical piano audio and scores for audio-to-score transcription},
+	booktitle	= {International Society for Music Information Retrieval Late-Breaking/Demo Session ({ISMIR-LBD})},
+  	year		= {2021}
+}
+
 @book{Mueller2021_FMP_SPRINGER,
   	author    	= {Meinard M\"{u}ller},
   	title     	= {Fundamentals of Music Processing -- Using Python and Jupyter Notebooks},
@@ -321,6 +350,7 @@
 	pages       = {262--280},
 	year        = {2021},
 	doi         = {10.1016/J.INS.2021.03.014},
+	tags_lele	= {#AMT, #A2S},
 }
 
 @inproceedings{HiramatsuNY2021_JointEstimationNoteValuesVoices_ISMIR,
@@ -543,6 +573,13 @@
 %         %%    %%    %%
 %         %%    %%%%%%%%
 
+@phdthesis{Cogliati2018_TowardHumanCentricPianoTranscription_Thesis,
+	author 		= {Andrea Cogliati},
+	title 		= {Toward a human-centric automatic piano music transcription system},
+	school 		= {University of Rochester},
+	year 		= {2018},
+}
+
 @inproceedings{CuestaGML2018_ChoirIntonation_ICMPC,
 	author     = {Helena Cuesta and Emilia G{\'o}mez and Agust{\'\i}n Martorell and Felipe Lo{\'a}iciga},
 	title      = {Analysis of intonation in unison choir singing},
@@ -596,6 +633,7 @@
 	address 	= {Paris, France},
 	pages 		= {113--119},
 	year 		= {2018},
+	tags_lele  	= {#rhythm_quantisation, #AMT},
 }
 
 @inproceedings{NakamuraBYD2018_TowardsCompleteTranscription_ICASSP,
@@ -606,6 +644,7 @@
 	pages       = {101--105},
 	year        = {2018},
 	doi         = {10.1109/ICASSP.2018.8461914},
+	tags_lele	= {#AMT, #A2S},
 }
 
 @inproceedings{SankaranarayananBCC2018_GenerateToAdapt_CVPR,
@@ -908,5 +947,20 @@
 }
 
 
+%  	%%    %%	%%%%%%%%				%%    %%	%%%%%%%%	  %%%%  	%%%%%%%
+%	%%%%  %%	%%    %%				 %%  %%		%%			 %%  %% 	%%    %%
+%	%% %% %%	%%    %%	%%%%%%%%	   %%		%%%%%%%%	 %%%%%% 	%%%%%%%
+%	%%  %%%%	%%    %%				   %%		%%			%%    %%	%%  %%
+%	%%    %%	%%%%%%%%				   %%		%%%%%%%%	%%    %%	%%    %%
+
+@misc{MuseScore_Online,
+    title = {{MuseScore}: {F}ree music composition and notation software},
+    howpublished = {\url{https://musescore.org}, last accessed on 30 Mar, 2022},
+}
+
+@misc{Finale_Online,
+    title = {{Finale}: {M}usic notation software that lets you create your way},
+    howpublished = {\url{https://www.finalemusic.com}, last access on 30 Mar, 2022},
+}
 
 
