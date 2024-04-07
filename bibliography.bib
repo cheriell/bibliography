@@ -43,6 +43,8 @@
 % JOSS          Journal of Open Source Software
 % TISMIR        Transactions of the International Society for Music Information Retrieval
 %
+% TechRep       Technical Report
+%
 %
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Publisher Abbriviations
@@ -122,6 +124,7 @@
 % - Tasks:
 % #A2S                              Audio-to-score (transcription)
 % #AMT                              Automatic music transcription
+% #beat_tracking                    Beat tracking
 % #multi_instrument_transcription   Multi-instrument transcription
 % #MPE                              Multi-pitch estimation
 % #NT                               Note tracking
@@ -179,7 +182,7 @@
     pages       = {135--149},
     year        = {2023},
     doi         = {10.5334/TISMIR.161},
-    tags_lele     = {#dataset},
+    tags_lele   = {#dataset},
 }
 
 @article{LiPL2023_AutoencoderApplicationsSurvey_ASC,
@@ -190,7 +193,7 @@
     pages       = {110176},
     year        = {2023},
     doi         = {10.1016/J.ASOC.2023.110176},
-    tags_lele    = {#AE, #Suevey},
+    tags_lele   = {#AE, #Suevey},
 
 }
 
@@ -203,7 +206,7 @@
     doi         = {10.48550/ARXIV.2305.00131},
     eprinttype  = {arXiv},
     eprint      = {2305.00131},
-    tags_lele    = {#UDA, #self_training},
+    tags_lele   = {#UDA, #self_training},
 }
 
 
@@ -213,6 +216,16 @@
 %   %%          %%
 %   %%%%%%%%    %%%%%%%%
 
+@inproceedings{ZhaoXW2022_BeatTransformer_ISMIR,
+    author      = {Jingwei Zhao and Gus Xia and Ye Wang},
+    title       = {Beat {T}ransformer: Demixed beat and downbeat tracking with dilated self-attention},
+    booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+    address     = {Bengaluru, India},
+    pages       = {169--177},
+    year        = {2022},
+    tags_lele   = {#beat_tracking, #Transformer},
+}
+
 @inproceedings{LiuKMB2022_PM2S_ISMIR,
     author      = {Lele Liu and Qiuqiang Kong and Veronica Morfi and Emmanouil Benetos},
     title       = {Performance {MIDI}-to-score conversion by neural beat tracking},
@@ -220,6 +233,7 @@
     address     = {Bengaluru, India},
     pages       = {395--402},
     year        = {2022},
+    tags_lele   = {#PM2S, #beat_tracking},
 }
 
 @article{AminiFPDM2022_SelfTrainingSurvey_CoRR,
@@ -230,7 +244,7 @@
     year        = {2022},
     eprinttype  = {arXiv},
     eprint      = {2202.12040},
-    tags_lele    = {#self_training, #review},
+    tags_lele   = {#self_training, #review},
 }
 
 @inproceedings{GardnerSMHE2022_MT3Transcription_ICLR,
@@ -250,7 +264,7 @@
     pages       = {781--785},
     year        = {2022},
     doi         = {10.1109/ICASSP43922.2022.9746549},
-    tags_lele    = {#AMT}
+    tags_lele   = {#AMT}
 }
 
 @inproceedings{KohF2022_ConsistencyRegularizationDomainAdaptation_ECCV,
@@ -308,20 +322,20 @@
 %   %%%%%%%%          %%
 
 @inproceedings{LiuMB2021_ACPASDataset_ISMIR-LBD,
-    author        = {Lele Liu and Veronica Morfi and Emmanouil Benetos},
-      title        = {ACPAS: {A} dataset of aligned classical piano audio and scores for audio-to-score transcription},
-    booktitle    = {International Society for Music Information Retrieval Late-Breaking/Demo Session ({ISMIR-LBD})},
-      year        = {2021}
+    author      = {Lele Liu and Veronica Morfi and Emmanouil Benetos},
+    title       = {ACPAS: {A} dataset of aligned classical piano audio and scores for audio-to-score transcription},
+    booktitle   = {International Society for Music Information Retrieval Late-Breaking/Demo Session ({ISMIR-LBD})},
+    year        = {2021}
 }
 
 @book{Mueller2021_FMP_SPRINGER,
-      author        = {Meinard M\"{u}ller},
-      title         = {Fundamentals of Music Processing -- Using Python and Jupyter Notebooks},
-      year          = {2021},
-      isbn          = {978-3-030-69807-2},
-      publisher     = {Springer},
-      edition       = {2nd},
-      doi           = {10.1007/978-3-030-69808-9}
+    author      = {Meinard M\"{u}ller},
+    title       = {Fundamentals of Music Processing -- Using Python and Jupyter Notebooks},
+    year        = {2021},
+    isbn        = {978-3-030-69807-2},
+    publisher   = {Springer},
+    edition     = {2nd},
+    doi         = {10.1007/978-3-030-69808-9}
 }
 
 @article{KongLSWW2021_HighResPianoTranscription_IEEE-TASLP,
@@ -338,7 +352,7 @@
     author      = {Curtis Hawthorne and Ian Simon and Rigel Swavely and Ethan Manilow and Jesse H. Engel},
     title       = {Sequence-to-sequence piano transcription with {T}ransformers},
     booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    address        = {Online},
+    address     = {Online},
     pages       = {246--253},
     year        = {2021},
 }
@@ -351,14 +365,14 @@
     pages       = {262--280},
     year        = {2021},
     doi         = {10.1016/J.INS.2021.03.014},
-    tags_lele    = {#AMT, #A2S},
+    tags_lele   = {#AMT, #A2S},
 }
 
 @inproceedings{HiramatsuNY2021_JointEstimationNoteValuesVoices_ISMIR,
     author      = {Yuki Hiramatsu and Eita Nakamura and Kazuyoshi Yoshii},
     title       = {Joint estimation of note values and voices for audio-to-score piano transcription},
     booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    address          = {Online},
+    address     = {Online},
     pages       = {278--284},
     year        = {2021},
 }
@@ -367,7 +381,7 @@
     author      = {Masahiro Suzuki},
     title       = {Score {T}ransformer: Generating musical score from note-level representation},
     booktitle   = {Proceedings of the {ACM} Multimedia Asia ({MMAsia})},
-    address        = {Gold Coast, Australia},
+    address     = {Gold Coast, Australia},
     pages       = {31:1--31:7},
     year        = {2021},
     doi         = {10.1145/3469877.3490612},
@@ -394,13 +408,13 @@
 }
 
 @article{LiuB2021_FromAudioToMusicNotation_HandbookAIforMusic,
-    author        = {Lele Liu and Emmanouil Benetos},
-    title        = {From audio to music notation},
-    journal        = {Handbook of Artificial Intelligence for Music: Foundations, Advanced Approaches, and Developments for Creativity},
-    pages        = {693--714},
+    author      = {Lele Liu and Emmanouil Benetos},
+    title       = {From audio to music notation},
+    journal     = {Handbook of Artificial Intelligence for Music: Foundations, Advanced Approaches, and Developments for Creativity},
+    pages       = {693--714},
     year        = {2021},
-    publisher    = {Springer},
-    tags_lele    = {#AMT, #A2S, #review}
+    publisher   = {Springer},
+    tags_lele   = {#AMT, #A2S, #review}
 }
 
 @inproceedings{LiuMB2021_JointMPEandScoreTranscription_ICASSP,
@@ -431,6 +445,25 @@
 %   %%          %%    %%
 %   %%%%%%%%    %%%%%%%%
 
+@inproceedings{FoscarinMRJS2020_ASAPDataset_ISMIR,
+    author      = {Francesco Foscarin and Andrew McLeod and Philippe Rigaux and Florent Jacquemard and Masahiko Sakai},
+    title       = {{ASAP}: A dataset of aligned scores and performances for piano transcription},
+    booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+    address     = {Montreal, Canada},
+    pages       = {534--541},
+    year        = {2020},
+}
+
+@inproceedings{BoeckD2020_DeconstructAnalyseReconstructBeatTracking_ISMIR,
+    author      = {Sebastian B{\"{o}}ck and Matthew E. P. Davies},
+    title       = {Deconstruct, analyse, reconstruct: {H}ow to improve tempo, beat, and downbeat estimation},
+    booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+    address     = {Montreal, Canada},
+    pages       = {574--582},
+    year        = {2020},
+    tags_lele   = {#beat_tracking},
+}
+
 @inproceedings{MeiZZZ2020_InstanceAdaptiveSelfTrainingUDA_ECCV,
     author      = {Ke Mei and Chuang Zhu and Jiaqi Zou and Shanghang Zhang},
     title       = {Instance adaptive self-training for unsupervised domain adaptation},
@@ -447,25 +480,25 @@
     title       = {Teacher-student consistency For multi-source domain adaptation},
     journal     = {Computing Research Repository ({CoRR})},
     year        = {2020},
-    volume        = {abs/2010.10054},
-      eprinttype  = {arXiv},
-      eprint      = {2010.10054},
+    volume      = {abs/2010.10054},
+    eprinttype  = {arXiv},
+    eprint      = {2010.10054},
 }
 
 @inproceedings{HeLFY2020_ClassificationAwareSemi_CVPR,
     author      = {Gewen He and Xiaofeng Liu and Fangfang Fan and Jane You},
     title       = {Classification-aware semi-supervised domain adaptation},
-    booktitle     = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})},
-    address        = {Seattle, WA, USA},
+    booktitle   = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})},
+    address     = {Seattle, WA, USA},
     year        = {2020},
     pages       = {4147--4156},
     doi         = {10.1109/CVPRW50498.2020.00490}
 }
 
 @article{YcartLBP2020_PerceptualValidityEvaluationMetrics_TISMIR,
-    author      = {Adrien Ycart and Lele Liu and Emmanouil Benetos and    Marcus T. Pearce},
+    author      = {Adrien Ycart and Lele Liu and Emmanouil Benetos and Marcus T. Pearce},
     title       = {Investigating the perceptual validity of evaluation metrics for automatic piano music transcription},
-    journal        = {Transactions of the International Society for Music Information Retrieval ({TISMIR})},
+    journal     = {Transactions of the International Society for Music Information Retrieval ({TISMIR})},
     volume      = {3},
     number      = {1},
     pages       = {68--81},
@@ -487,7 +520,7 @@
     author      = {Qingyang Xi and Rachel M. Bittner and Johan Pauwels and Xuzhou Ye and Juan Pablo Bello},
     title       = {GuitarSet: {A} Dataset for guitar transcription},
     booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    adddress       = {Paris, France},
+    address     = {Paris, France},
     pages       = {453--460},
     year        = {2018},
 }
@@ -517,7 +550,7 @@
     address     = {New Paltz, New York, USA},
     pages       = {45--49},
     year        = {2019},
-      doi         = {10.1109/WASPAA.2019.8937170},
+    doi         = {10.1109/WASPAA.2019.8937170},
 }
 
 @article{BenetosDDE2019_AMTAnOverview_IEEE-SPM,
@@ -529,7 +562,7 @@
     pages       = {20--30},
     year        = {2019},
     doi         = {10.1109/MSP.2018.2869928},
-    tags_lele    = {#AMT, #review},
+    tags_lele   = {#AMT, #review},
 }
 
 @inproceedings{KelzBW2019_ADSRPianoTranscription_ICASSP,
@@ -537,34 +570,34 @@
     title       = {Deep polyphonic {ADSR} piano note transcription},
     booktitle   = {Proceedings of the {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
     pages       = {246--250},
-    address        = {Brighton, UK},
+    address     = {Brighton, UK},
     year        = {2019},
     doi         = {10.1109/ICASSP.2019.8683582},
 }
 
 @inproceedings{HawthorneSRSHDEEE2019_MAESTRODataset_ICLR,
-    author        ={Curtis Hawthorne and Andriy Stasyuk and Adam Roberts and Ian Simon and Cheng-Zhi Anna Huang and Sander Dieleman and Erich Elsen and Jesse Engel and Douglas Eck},
-    title        ={Enabling factorized piano music modeling and generation with the {MAESTRO} dataset},
-    booktitle    ={Proceedings of the International Conference on Learning Representations ({ICLR})},
+    author      ={Curtis Hawthorne and Andriy Stasyuk and Adam Roberts and Ian Simon and Cheng-Zhi Anna Huang and Sander Dieleman and Erich Elsen and Jesse Engel and Douglas Eck},
+    title       ={Enabling factorized piano music modeling and generation with the {MAESTRO} dataset},
+    booktitle   ={Proceedings of the International Conference on Learning Representations ({ICLR})},
     year        ={2019},
 }
 
 @inproceedings{LoshchilovH2019_AdamW_ICLR,
-    author        = {Ilya Loshchilov and Frank Hutter},
-    title         = {Decoupled weight decay regularization},
-    booktitle     = {Proceedings of the International Conference on Learning Representations ({ICLR})},
-    adress        = {New Orleans, USA},
-    year          = {2019}
+    author      = {Ilya Loshchilov and Frank Hutter},
+    title       = {Decoupled weight decay regularization},
+    booktitle   = {Proceedings of the International Conference on Learning Representations ({ICLR})},
+    adress      = {New Orleans, USA},
+    year        = {2019}
 }
 
 @inproceedings{BittnerMSLB2017_DeepSalience_ISMIR,
-    author         = {Rachel M. Bittner and Brian McFee and Justin Salamon and Peter Li and Juan P. Bello},
-    title         = {Deep salience representations for {F0} tracking in polyphonic music},
-    booktitle     = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    pages         = {63--70},
-    year          = {2017},
-    address       = {Suzhou, China},
-    doi           = {10.5281/zenodo.1417937}
+    author      = {Rachel M. Bittner and Brian McFee and Justin Salamon and Peter Li and Juan P. Bello},
+    title       = {Deep salience representations for {F0} tracking in polyphonic music},
+    booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+    pages       = {63--70},
+    year        = {2017},
+    address     = {Suzhou, China},
+    doi         = {10.5281/zenodo.1417937}
 }
 
 
@@ -574,29 +607,37 @@
 %         %%    %%    %%
 %         %%    %%%%%%%%
 
+@inproceedings{YcartB2018_A-MAPSDataset_ISMIR-LBD,
+    author      = {Adrien Ycart and Emmanouil Benetos},
+    title       = {{A-MAPS}: Augmented {MAPS} dataset with rhythm and key annotations},
+    booktitle   = {International Society for Music Information Retrieval Late-Breaking/Demo Session ({ISMIR-LBD})},
+    year        = {2018},
+}
+
+
 @phdthesis{Cogliati2018_TowardHumanCentricPianoTranscription_Thesis,
-    author         = {Andrea Cogliati},
-    title         = {Toward a human-centric automatic piano music transcription system},
-    school         = {University of Rochester},
-    year         = {2018},
+    author      = {Andrea Cogliati},
+    title       = {Toward a human-centric automatic piano music transcription system},
+    school      = {University of Rochester},
+    year        = {2018},
 }
 
 @inproceedings{CuestaGML2018_ChoirIntonation_ICMPC,
-    author     = {Helena Cuesta and Emilia G{\'o}mez and Agust{\'\i}n Martorell and Felipe Lo{\'a}iciga},
-    title      = {Analysis of intonation in unison choir singing},
-    booktitle  = {Proceedings of the International Conference of Music Perception and Cognition ({ICMPC})},
-    address    = {Graz, Austria},
-    pages      = {125--130},
-    year       = {2018}
+    author      = {Helena Cuesta and Emilia G{\'o}mez and Agust{\'\i}n Martorell and Felipe Lo{\'a}iciga},
+    title       = {Analysis of intonation in unison choir singing},
+    booktitle   = {Proceedings of the International Conference of Music Perception and Cognition ({ICMPC})},
+    address     = {Graz, Austria},
+    pages       = {125--130},
+    year        = {2018}
 }
 
 @inproceedings{GharibDCSV2018_AdversarialUDA4AcousticSceneClassification_DCASE,
-  author       = {Shayan Gharib and Konstantinos Drossos and Emre Cakir and Dmitriy Serdyuk and Tuomas Virtanen},
-  title        = {Unsupervised adversarial domain adaptation for acoustic scene classification},
-  booktitle    = {Workshop on Detection and Classification of Acoustic Scenes and Events ({DCASE})},
-  address      = {Surrey, UK},
-  pages        = {138--142},
-  year         = {2018},
+    author      = {Shayan Gharib and Konstantinos Drossos and Emre Cakir and Dmitriy Serdyuk and Tuomas Virtanen},
+    title       = {Unsupervised adversarial domain adaptation for acoustic scene classification},
+    booktitle   = {Workshop on Detection and Classification of Acoustic Scenes and Events ({DCASE})},
+    address     = {Surrey, UK},
+    pages       = {138--142},
+    year        = {2018},
 }
 
 @inproceedings{LiPWK2018_DomainGeneralizationWithAdversarialAutoencoder_CVPR,
@@ -613,39 +654,39 @@
     author      = {Curtis Hawthorne and Erich Elsen and Jialin Song and Adam Roberts and Ian Simon and Colin Raffel and Jesse H. Engel and Sageev Oore and Douglas Eck},
     title       = {Onsets and frames: Dual-objective piano transcription},
     booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    address        = {Paris, France},
+    address     = {Paris, France},
     pages       = {50--57},
     year        = {2018},
 }
 
-@inproceedings{McLeodS2018_EvaluatingAutomaticPolyphonicTranscription_ISMIR,
+@inproceedings{McLeodS2018_MV2HEvaluationMetric_ISMIR,
     author      = {Andrew McLeod and Mark Steedman},
     title       = {Evaluating automatic polyphonic music transcription},
     booktitle   = {Proceedings of the International Society for Music Information    Retrieval Conference ({ISMIR})},
-    address        = {Paris, France},
+    address     = {Paris, France},
     pages       = {42--49},
     year        = {2018},
 }
 
 @inproceedings{McLeodS2018_MeterDetectionAlignmentMIDIPerformances_ISMIR,
-    author         = {Andrew McLeod and Mark Steedman},
-    title         = {Meter detection and alignment of {MIDI} performances},
-    booktitle     = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+    author      = {Andrew McLeod and Mark Steedman},
+    title       = {Meter detection and alignment of {MIDI} performances},
+    booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
     address     = {Paris, France},
-    pages         = {113--119},
-    year         = {2018},
-    tags_lele      = {#rhythm_quantisation, #AMT},
+    pages       = {113--119},
+    year        = {2018},
+    tags_lele   = {#rhythm_quantisation, #AMT},
 }
 
 @inproceedings{NakamuraBYD2018_TowardsCompleteTranscription_ICASSP,
-    author       = {Eita Nakamura and Emmanouil Benetos and Kazuyoshi Yoshii and Simon Dixon},
+    author      = {Eita Nakamura and Emmanouil Benetos and Kazuyoshi Yoshii and Simon Dixon},
     title       = {Towards complete polyphonic music transcription: Integrating multi-pitch detection and rhythm quantization},
     booktitle   = {Proceedings of the {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
-    address          = {Calgary, AB, Canada},
+    address     = {Calgary, AB, Canada},
     pages       = {101--105},
     year        = {2018},
     doi         = {10.1109/ICASSP.2018.8461914},
-    tags_lele    = {#AMT, #A2S},
+    tags_lele   = {#AMT, #A2S},
 }
 
 @inproceedings{SankaranarayananBCC2018_GenerateToAdapt_CVPR,
@@ -657,12 +698,12 @@
 }
 
 @inproceedings{ThickstunHFK2018_InvariancesDataAugmentationAMT_ICASSP,
-    author        = {John Thickstun and Za{\"{\i}}d Harchaoui and Dean P. Foster and Sham M. Kakade},
-    title         = {Invariances and data augmentation for supervised music transcription},
-    booktitle     = {Proceedings of the {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
-    address       = {Calgary, Canada},
-    pages         = {2241--2245},
-    year          = {2018}
+    author      = {John Thickstun and Za{\"{\i}}d Harchaoui and Dean P. Foster and Sham M. Kakade},
+    title       = {Invariances and data augmentation for supervised music transcription},
+    booktitle   = {Proceedings of the {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
+    address     = {Calgary, Canada},
+    pages       = {2241--2245},
+    year        = {2018}
 }
 
 
@@ -673,7 +714,7 @@
 %         %%          %%
 
 @article{NakamuraYD2017_NoteValueRecognitionPianoTranscription_IEEE-TASLP,
-    author         = {Eita Nakamura and Kazuyoshi Yoshii and Simon Dixon},
+    author      = {Eita Nakamura and Kazuyoshi Yoshii and Simon Dixon},
     title       = {Note value recognition for piano transcription using markov random fields},
     journal     = {{IEEE}/{ACM} Transactions on Audio, Speech, and Language Processing ({IEEE-TASLP})},
     volume      = {25},
@@ -695,11 +736,11 @@
 }
 
 @inproceedings{ThickstunHK2017_MusicNet_ICLR,
-    author     = {John Thickstun and Za{\"{\i}}d Harchaoui and Sham M. Kakade},
-    title      = {Learning features of music from scratch},
-    booktitle  = {Proceedings of the International Conference on Learning Representations ({ICLR})},
-    address    = {Toulon, France},
-    year       = {2017}
+    author      = {John Thickstun and Za{\"{\i}}d Harchaoui and Sham M. Kakade},
+    title       = {Learning features of music from scratch},
+    booktitle   = {Proceedings of the International Conference on Learning Representations ({ICLR})},
+    address     = {Toulon, France},
+    year        = {2017}
 }
 
 
@@ -723,10 +764,10 @@
     author      = {Andrea Cogliati and David Temperley and Zhiyao Duan},
     title       = {Transcribing human piano performances into music notation},
     booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    address          = {New York, USA},
+    address     = {New York, USA},
     pages       = {758--764},
     year        = {2016},
-    tags_lele    = {#AMT, #PM2S},
+    tags_lele   = {#AMT, #PM2S},
 }
 
 @inproceedings{GhifaryKZBL2016_DeepReconstructionClassificationUDA_ECCV,
@@ -740,7 +781,7 @@
     publisher   = {Springer},
     year        = {2016},
     doi         = {10.1007/978-3-319-46493-0\_36},
-    tags_lele    = {#UDA, #AE},
+    tags_lele   = {#UDA, #AE},
 }
 
 %         %%    %%%%%%%%
@@ -761,6 +802,15 @@
     tags_lele   = {#multi_instrument_transcription},
 }
 
+@inproceedings{KrebsBW2015_EfficientStateSpaceModelJointTempoMeterTracking_ISMIR,
+  author       = {Florian Krebs and Sebastian B{\"{o}}ck and Gerhard Widmer},
+  title        = {An efficient state-space model for joint tempo and meter tracking},
+  booktitle    = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+  address      = {M{\'{a}}laga, Spain},
+  pages        = {72--78},
+  year         = {2015},
+}
+
 
 %         %%    %%    %%
 %         %%    %%    %%
@@ -768,14 +818,25 @@
 %         %%          %%
 %         %%          %%
 
+@inproceedings{BoeckKW2014_MultiModelBeatTracking_ISMIR,
+    author      = {Sebastian B{\"{o}}ck and Florian Krebs and Gerhard Widmer},
+    title       = {A multi-model approach to beat tracking considering heterogeneous music styles},
+    booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
+    address     = {Taipei, Taiwan},
+    pages       = {603--608},
+    year        = {2014},
+    tags_lele   = {#beat_tracking},
+}
+
 @inproceedings{MauchD2014_PYINFrequencyEstimator_ICASSP,
     author      = {Matthias Mauch and Simon Dixon},
     title       = {{PYIN}: A fundamental frequency estimator using probabilistic threshold distributions},
     booktitle   = {Proceedings of the {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
     address     = {Florence, Italy},
-    year         = {2014},
-    pages         = {659--663},
-    doi            = {10.1109/ICASSP.2014.6853678},
+    year        = {2014},
+    pages       = {659--663},
+    doi         = {10.1109/ICASSP.2014.6853678},
+    tags_lele   = {#AMT}
 }
 
 @article{DuanHP2014_MultiPitchStreaming_IEEE-TASLP,
@@ -787,7 +848,7 @@
     pages       = {138--150},
     year        = {2014},
     doi         = {10.1109/TASLP.2013.2285484},
-    tags_lele    = {#multi_instrument_transcription},
+    tags_lele   = {#multi_instrument_transcription},
 }
 
 
@@ -798,23 +859,23 @@
 %         %%    %%%%%%%%
 
 @inproceedings{FritschP2013_ScoreInformedSourceSepNMFAndSynth_ICASSP,
-    author       = {Joachim Fritsch and Mark D. Plumbley},
-    title         = {Score informed audio source separation using constrained nonnegative matrix factorization and score synthesis},
-    booktitle     = {Proceedings of the {IEEE} International Conference on Acoustics, Speech, and Signal Processing ({ICASSP})},
-    address       = {Vancouver, Canada},
-    pages         = {888--891},
-    year          = {2013}
+    author      = {Joachim Fritsch and Mark D. Plumbley},
+    title       = {Score informed audio source separation using constrained nonnegative matrix factorization and score synthesis},
+    booktitle   = {Proceedings of the {IEEE} International Conference on Acoustics, Speech, and Signal Processing ({ICASSP})},
+    address     = {Vancouver, Canada},
+    pages       = {888--891},
+    year        = {2013}
 }
 
 @article{BenetosD2013_MultiInstrumentTranscriptionTempConstrainedShiftInvariantModel_JASA,
-    author         = {Emmanouil Benetos and Simon Dixon},
-    title         = {Multiple-instrument polyphonic music transcription using a temporally constrained shift-invariant model},
+    author      = {Emmanouil Benetos and Simon Dixon},
+    title       = {Multiple-instrument polyphonic music transcription using a temporally constrained shift-invariant model},
     journal     = {Journal of the Acoustical Society of America ({JASA})},
-    publisher    = {AIP Publishing},
-    volume         = {133},
-    number         = {3},
-    pages         = {1727--1741},
-    year         = {2013},
+    publisher   = {AIP Publishing},
+    volume      = {133},
+    number      = {3},
+    pages       = {1727--1741},
+    year        = {2013},
     tags_lele   = {#multi_instrument_transcription},
 }
 
@@ -825,14 +886,26 @@
 %         %%    %%    %%
 %         %%    %%%%%%%%
 
+@article{EmiyaBD2010_MAPSDataset_IEEE-TASLP,
+    author      = {Valentin Emiya and Roland Badeau and Bertrand David},
+    title       = {Multipitch estimation of piano sounds using a new probabilistic spectral smoothness principle},
+    journal     = {{IEEE} Transactions on Audio, Speech, and Language Processing ({IEEE-TASLP})},
+    volume      = {18},
+    number      = {6},
+    pages       = {1643--1654},
+    year        = {2010},
+    doi         = {10.1109/TASL.2009.2038819},
+    tags_lele   = {#dataset, #MPE},
+}
+
 @article{VincentBB2010_SpectralDecomposition_TASLP,
-    author        = {Emmanuel Vincent and Nancy Bertin and Roland Badeau},
-    title         = {Adaptive harmonic spectral decomposition for multiple pitch estimation},
-    journal       = {{IEEE}/{ACM} Transactions on Audio, Speech, and Language Processing ({IEEE-TASLP})},
-    year          = {2010},
-    volume        = {18},
-    number        = {3},
-    pages         = {528--537},
+    author      = {Emmanuel Vincent and Nancy Bertin and Roland Badeau},
+    title       = {Adaptive harmonic spectral decomposition for multiple pitch estimation},
+    journal     = {{IEEE}/{ACM} Transactions on Audio, Speech, and Language Processing ({IEEE-TASLP})},
+    year        = {2010},
+    volume      = {18},
+    number      = {3},
+    pages       = {528--537},
 }
 
 
@@ -842,14 +915,23 @@
 %   %%    %%          %%
 %   %%%%%%%%    %%%%%%%%
 
+@article{DaviesDP2009_EvaluationMethodsAudioBeatTracking_TechRep,
+    author      = {Matthew E. P. Davies and Norberto Degara and Mark D Plumbley},
+    title       = {Evaluation methods for musical audio beat tracking algorithms},
+    journal     = {Centre for Digital Music, Queen Mary University of London, Technical Report},
+    year        = {2009},
+    volume      = {C4DM-TR-09-06},
+    tags_lele   = {#beat_tracking},
+}
+
 @article{Temperley2009_UnifiedProbabilisticModelPolyphonicMusicAnalysis_JNMR,
-    author         = {David Temperley},
-    title         = {A unified probabilistic model for polyphonic music analysis},
+    author      = {David Temperley},
+    title       = {A unified probabilistic model for polyphonic music analysis},
     journal     = {Journal of New Music Research ({JNMR})},
-    volume         = {38},
-    number         = {1},
-    pages         = {3--18},
-    year         = {2009},
+    volume      = {38},
+    number      = {1},
+    pages       = {3--18},
+    year        = {2009},
     doi         = {10.1080/09298210902928495},
 }
 
@@ -864,17 +946,17 @@
     author      = {Paris Smaragdis and Judith C Brown},
     title       = {Non-negative matrix factorization for polyphonic music transcription},
     booktitle   = {{IEEE} Workshop on Applications of Signal Processing to Audio and Acoustics ({WASPAA})},
-    publisher    = {{IEEE}},
-    year         = {2003},
-    pages         = {177--180},
+    publisher   = {{IEEE}},
+    year        = {2003},
+    pages       = {177--180},
 }
 
 @inproceedings{NienhuysN2003_LilyPond_XIV-CIM,
-    author         = {Han-Wen Nienhuys and Jan Nieuwenhuizen},
-    title         = {{LilyPond}, a system for automated music engraving},
-    booktitle     = {Proceedings of the {XIV} Colloquium on Musical Informatics ({XIV-CIM})},
+    author      = {Han-Wen Nienhuys and Jan Nieuwenhuizen},
+    title       = {{LilyPond}, a system for automated music engraving},
+    booktitle   = {Proceedings of the {XIV} Colloquium on Musical Informatics ({XIV-CIM})},
     address     = {Firenze, Italy},
-    year         = {2003},
+    year        = {2003},
 }
 
 
@@ -906,7 +988,7 @@
     author      = {Christopher Raphael},
     title       = {Automated rhythm transcription},
     booktitle   = {Proceedings of the International Society for Music Information Retrieval Conference ({ISMIR})},
-    address          = {Bloomington, Indiana, USA},
+    address     = {Bloomington, Indiana, USA},
     year        = {2001},
 }
 
@@ -918,14 +1000,14 @@
 %   %%%%%%%%    %%%%%%%%
 
 @article{TemperleyS1999_MeterHarmonyPreferenceRule_CMJ,
-    author         = {David Temperley and Daniel Sleator},
-    title         = {Modeling meter and harmony: A preference-rule approach},
-    volume         = {23},
-    number         = {1},
+    author      = {David Temperley and Daniel Sleator},
+    title       = {Modeling meter and harmony: A preference-rule approach},
+    volume      = {23},
+    number      = {1},
     journal     = {Computer Music Journal ({CMJ})},
-    year         = {1999},
-    pages         = {10--27},
-      doi           = {10.1162/014892699559616},
+    year        = {1999},
+    pages       = {10--27},
+    doi         = {10.1162/014892699559616},
 }
 
 
@@ -936,13 +1018,13 @@
 %   %%%%%%%%    %%%%%%%%
 
 @article{DesianH1989_QuantizationMusicalTime_CMJ,
-    author         = {Peter Desain and Henkjan Honing},
-    title         = {The quantization of musical time: A connectionist approach},
-    volume         = {13},
-    number         = {3},
+    author      = {Peter Desain and Henkjan Honing},
+    title       = {The quantization of musical time: A connectionist approach},
+    volume      = {13},
+    number      = {3},
     journal     = {Computer Music Journal ({CMJ})},
-    year         = {1989},
-    pages         = {56--66},
+    year        = {1989},
+    pages       = {56--66},
     doi         = {10.2307/3680012},
 }
 
@@ -963,4 +1045,7 @@
     howpublished = {\url{https://www.finalemusic.com}, last accessed on 30 Mar, 2022},
 }
 
-
+@misc{CPMDatabase_Online,
+    title = {{Classical Piano-Midi Database}},
+    howpublished = {\url{http://www.piano-midi.de}, last accessed on 18 Aug, 2021},
+}
